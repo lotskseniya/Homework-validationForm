@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <h4>Заповніть форму для реєстрації:</h4>
+      <form action="" class="form">
+        <div class="input-container">
+          <p class="placeholder-text">Ім'я</p>
+          <input data-min-length="3" data-item="true" type="text" class="text-input">
+        </div>
+        <div class="input-container">
+          <p class="placeholder-text">Прізвище</p>
+          <input data-min-length="3" data-item="true" type="text" class="text-input">
+        </div>
+        <div class="input-container">
+          <p class="placeholder-text">Email</p>
+          <input data-item="true" id="email" class="text-input">
+        </div>
+        <div class="input-container">
+          <p class="placeholder-text">Телефон</p>
+          <input data-min-length="13" id="phone" data-item="true" type="text" placeholder="+380(__)___-__-__" class="text-input">
+        </div>
+        <div class="input-container">
+          <p class="placeholder-text">Пароль</p>
+          <input data-min-length="5" data-item="true" type="password" class="text-input">
+        </div>
+    
+        <button type="submit" class="btn">Відправити</button>
+      </form>
+      
+  </div>
+
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
